@@ -38,7 +38,7 @@ export class EventComponent  {
       this.to=this.to.filter(a=>a!=this.dragValue)
       
       if(event.target.className=="card-body"){
-        
+        this.singleClass=true
         this.dragged.parentNode.removeChild(this.dragged)
         event.target.appendChild(this.dragged);
       }
